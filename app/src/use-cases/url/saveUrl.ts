@@ -1,5 +1,7 @@
+import { HashCreator } from "../../../shared/hash-creator/HashCreator";
+
 export class SaveUrl{
     public run(){
-        return Math.random().toString(36).substring(2,7);
+        return HashCreator.create(6);
     }
 }
