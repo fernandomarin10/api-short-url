@@ -1,7 +1,7 @@
-import { HashCreator } from "../../../shared/hash-creator/HashCreator";
+import { Hash } from "../../../shared/hash-creator/Hash";
 
 export class SaveUrl{
     public run(){
-        return HashCreator.create(6);
+        return Hash.create(6);
     }
 }
